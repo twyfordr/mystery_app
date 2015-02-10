@@ -3,4 +3,4 @@ log/
 .ruby-gemset
 .ruby-version
 .rspec
-
+tmp/
