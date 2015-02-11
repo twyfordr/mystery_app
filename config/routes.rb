@@ -1,5 +1,8 @@
 MysteryApp::Application.routes.draw do
 
+  devise_for :users
+  root :to => 'home#index'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -43,8 +46,6 @@ MysteryApp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  root :to => 'home#index'
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
