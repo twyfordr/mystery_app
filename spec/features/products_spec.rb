@@ -10,7 +10,9 @@ feature 'products' do
     end
   end
 
-  scenario 'authed user adds a product' do
+  pending 'authed user adds a product' do
+    #user = create :user
+    user = User.create! :email => "John@foo.com", :password => "12345678"
     sign_in user
     visit new_product_path
     fill_in "Name", :with => "Banana"

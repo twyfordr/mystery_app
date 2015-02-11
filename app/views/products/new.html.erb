@@ -1,0 +1,10 @@
+<h1>Create a Product</h1>
+<%= form_for :product, :url => products_path do |p|%>
+  <%= p.label :name %>
+  <%= p.text_field :name %>
+  <%= p.label :description %>
+  <%= p.text_field :description %>
+  <%= p.label :price %>
+  <%= p.text_field :price %>
+  <%= p.submit "Create" %>
+<% end %>

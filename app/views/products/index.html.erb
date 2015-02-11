@@ -1,6 +1,7 @@
 <h1>Product List</h1>
+<%= link_to "Create New", new_product_path %>
 <div class="list">
   <% @products.each do |p| %>
-    <%= p.name %>
+    <div><%= p.name %></div>
   <%end%>
 </div>

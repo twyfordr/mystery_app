@@ -21,4 +21,9 @@ gem 'jquery-rails'
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_girl'
+end
+
+group :test, :development do
+  #gem 'pry'
 end
