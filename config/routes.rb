@@ -3,6 +3,8 @@ MysteryApp::Application.routes.draw do
   devise_for :users
   root :to => 'home#index'
 
+  resources :products
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
