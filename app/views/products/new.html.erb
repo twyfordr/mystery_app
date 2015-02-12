@@ -1,10 +1,16 @@
 <h1>Create a Product</h1>
-<%= form_for :product, :url => products_path do |p|%>
+<%= form_for :product, :url => products_path, :class => 'form-horizontal' do |p|%>
+  <div class="control-group">
   <%= p.label :name %>
   <%= p.text_field :name %>
+  </div>
+  <div class="control-group">
   <%= p.label :description %>
   <%= p.text_field :description %>
+  </div>
+  <div class="control-group">
   <%= p.label :price %>
   <%= p.text_field :price %>
+  </div>
   <%= p.submit "Create" %>
 <% end %>
